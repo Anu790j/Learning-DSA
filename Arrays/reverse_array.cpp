@@ -30,6 +30,7 @@ void printarr(int arr[],int size)
         cout<<arr[i]<<" ";
     }
 }
+
 int main(){
     //Intializing of Array
     int arr[100];
