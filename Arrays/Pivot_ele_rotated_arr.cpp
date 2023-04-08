@@ -32,4 +32,4 @@ int main(){
     cout<<"Pivot element found at "<<pivot;
 
     return 0;
-}
+} 
