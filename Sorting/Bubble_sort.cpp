@@ -13,14 +13,22 @@ void printArr(int arr[],int size)
 
 void bubbleSort(int arr[],int size){
 
-    for(int i=0;i<size-1;i++)
+    for(int i=1;i<size;i++)
     {
-        for(int j=i+1;j<size;j++)
+        bool swapped=false;
+
+        for(int j=0;j<(size-i);j++)
         {
-            if(arr[i] >= arr[j])                //Checking the adjacent element 
-            swap(arr[i],arr[j]);                //if adjacent elemnt is smaller than replacing it
+            if(arr[j] >= arr[j+1]) {              //Checking the adjacent element 
+                 swap(arr[j],arr[j+1]);           //if adjacent elemnt is smaller than replacing it
+                                                     
+                 swapped =true;
+
+            }                                      
             
         }
+        if (swapped == false)
+            break;
     }
 
     cout<<endl<<"ArraY after sorting :"<<endl;
